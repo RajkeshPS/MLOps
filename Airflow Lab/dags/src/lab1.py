@@ -13,7 +13,7 @@ def load_data():
         str: Base64-encoded serialized data (JSON-safe).
     """
     print("We are here")
-    df = pd.read_csv(os.path.join(os.path.dirname(__file__), "../data/file.csv"))
+    df = pd.read_csv(os.path.join(os.path.dirname(__file__), "../data/mydata.csv"))
     serialized_data = pickle.dumps(df)                    # bytes
     return base64.b64encode(serialized_data).decode("ascii")  # JSON-safe string
 

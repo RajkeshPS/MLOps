@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import sys
 sys.path.append("/opt/airflow")
 
-from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
+from src.lab1 import load_data, data_preprocessing, build_save_model, load_model_elbow
 
 
 # NOTE:
